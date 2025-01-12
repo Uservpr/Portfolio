@@ -1,0 +1,47 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+}
+.Home h1 {
+  font-size: 6rem;
+}
+
+.Home p {
+  font-size: 1.5rem;
+}
+
+.Home p span {
+  color: yellow;
+}
+
+.fixed {
+  position: fixed;
+}
+
+#Contact .card-group {
+  display: flex;           /* Menggunakan Flexbox */
+  justify-content: center; /* Center card secara horizontal */
+  gap: 1rem;              /* Menambahkan jarak antar card */
+}
+
+#Contact .card-group .card {
+  text-align: center;
+  flex: 1 1 200px;         /* Flex grow dan basis agar card memiliki ukuran yang konsisten */
+  max-width: 300px;        /* Batas lebar maksimal card */
+}
+.bg-gray-600 {
+  background-color: #4B5563;
+}
+.section {
+    opacity: 0; /* Mulai dengan elemen tidak terlihat */
+    transition: opacity 0.5s ease-in-out; /* Transisi untuk efek fade */
+}
+
+.section.visible {
+    opacity: 1; /* Elemen terlihat saat kelas 'visible' ditambahkan */
+}
+
